@@ -1,0 +1,151 @@
+@import url('https://fontlibrary.org/face/hanken');
+body {
+	font-family: 'HankenBook', 'Lato', sans-serif;
+	/*padding-top: 60px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "HankenBook", "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+    color: inherit;
+}
+p {
+	color:white;
+	font-size: 300;
+}
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+footer {
+    margin: 50px 0;
+}
+.business-header {
+    height: 600px;
+    background: linear-gradient( rgba(20,20,20, .5), rgba(20,20,20, .5));
+   /* background: url(http://placehold.it/1920x400) center center no-repeat scroll; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+}
+ 
+.hero-search {
+	padding-top: 12%;
+    border-color: white !important;
+}
+.page-title{
+	font-family: 'HankenBook', 'Lato', sans-serif; 
+	font-size: 48px;
+	color: white;
+	text-align: center;
+}
+.entry-subtitle{
+	font-size: 18px;
+    padding-bottom: 15px;
+}
+.center {
+	text-align: center;
+}
+.hero-search-btn{
+    color: white;
+    text-align: center;
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: transparent;
+}
+.about {
+    padding: 50px 0;
+}
+.about h1{
+    color: #484848;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.about .lead{
+    color: #919191;
+    font-family: Hanken;
+    font-weight: 400;
+    font-size: 18px;
+}
+@media (min-width: 768px)
+.lead {
+    font-size: 21px;
+}
+
+
+.img_container {
+    text-align: center;
+    height:250px;
+    border-radius: 5%;
+}
+
+.img_container > i{
+    position:relative;
+    top: calc(50% - 10px); /* 50% - 3/4 of icon height */
+
+}
+.img_container > h3, h2{
+    position:relative;
+    top: calc(49% - 10px); /* 50% - 3/4 of icon height */
+    color: white;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.padding-15{
+    padding: 15px;
+}
+.thumbnail {
+    padding: 0;
+}
+.thumbnail img {
+    width: 100%;
+}
+.thumbnail .caption {
+     padding: 0 15px;
+}
+.caption {
+    height: 100px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+.caption
+    p{
+        color: #919191;
+    }
+.caption
+    .price {
+        padding: 0 10px;
+        color: #3498db;
+
+            }
+ .caption .name {
+        padding: 0 10px;
+        color: #484848;
+
+            }
+.caption 
+    .place{
+        padding: 0 10px;
+    }            
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+.ratings 
+    p{
+        color: #d17581;
+    }
+.ratings
+    .fa {
+    color: #d17581;
+}
