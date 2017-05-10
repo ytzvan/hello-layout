@@ -1,0 +1,17 @@
+<div class="col-md-12">
+	<h6 class="datepicker-title">Haz una Reserva en Línea</h6>
+</div>
+<div class="col-md-12">
+	<div id="datepicker" class="wc-bookings-date-picker"></div>	
+	<a href="#" class="btn btn-success " style="width:100%;">Reservar ahora</a>
+</div>
+
+<script type="text/javascript">
+$ ( document ).ready(function(){
+	var date = new Date();
+	$( "#datepicker" ).datepicker({
+		minDate: date
+	});
+});
+</script>
+<link rel="stylesheet" href="/styles/css/datepicker.css">

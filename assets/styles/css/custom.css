@@ -1,4 +1,5 @@
 @import url('https://fontlibrary.org/face/hanken');
+
 body {
 	font-family: 'HankenLight', 'Lato', sans-serif;
 	/*padding-top: 60px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
@@ -10,8 +11,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: inherit;
 }
 p {
-	color:white;
-	font-size: 300;
+	color:#484848;
 }
 .portfolio-item {
     margin-bottom: 25px;
@@ -19,6 +19,9 @@ p {
 
 footer {
     margin: 50px 0;
+}
+footer p {
+  color: white;
 }
 .business-header {
     height: 600px;
@@ -128,7 +131,8 @@ section .lead{
     .price {
         padding: 0 10px;
         color: #3498db;
-
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
             }
  .caption .name {
         padding: 0 10px;
@@ -138,6 +142,7 @@ section .lead{
 .caption 
     .place{
         padding: 0 10px;
+        color: #484848;
     }            
 .ratings {
     padding-right: 10px;
@@ -345,6 +350,147 @@ i{
   padding: 0 10px;
     line-height: 1.6em;
 }
-.fa-star{
+.fa-star {
   color: #f1c40f;
+}
+.fa-star-half {
+  color: #f1c40f;
+}
+.fa-star-half-o{
+  color: #f1c40f;
+}
+.tour-list:focus{
+  border: none;
+}
+:focus {
+    outline: transparent;
+    outline-color: transparent;
+    outline-style: auto;
+    outline-width: 0px;
+}
+span.rate{
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.ion-fireball{
+  color: #e74c3c;
+}
+.ion-pricetags{
+  color: #2ecc71;
+}
+.ion-location{
+  color: #2980b9;
+}
+.price-tag { 
+   position: relative; 
+   top: 150px; 
+   width: 100%; 
+}
+.price-tag span { 
+   color: white; 
+   font: bold 20px/45px 'Montserrat', Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 7px; 
+}
+.rate-tag{
+      float: right;
+    position: absolute;
+    top: 22px;
+    right: 15px;
+}
+.rate-tag span { 
+   color: white; 
+   font-family: 'Montserrat', Sans-Serif;
+   font-size: 14px;
+   font-weight: 200;
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 7px; 
+}
+.tour-picture{
+  
+  
+}
+.tour-image{
+  width: 100%; 
+  height: 500px; 
+  color: #fff;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-image: url("https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/pp8zvcf8xt8cz12rpfmf/ExploreSoutheastGilis.jpg");
+}
+.arrow {
+  padding-top: 5px;
+  text-align: center;
+    width: 50px;
+    position: absolute;
+    top: 27%;
+    color: #3498db;
+    z-index: 100;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.arrow:hover{
+  opacity: 1;
+}
+.arrow.right{
+  right: 10px;
+}
+.navbar-brand{
+  font-family: 'Lobster', Sans-Serif;
+  font-size: 30px;
+  color: #3498db !important;
+  padding: 15px;
+}
+.tour-title{
+  margin: 0;
+  text-align: left;
+
+}
+p.tour-info-description {
+  color: #484848;
+  text-align: justify;
+}
+h4.tour-info{
+  font-family: "Montserrat", Sans-Serif;
+}
+h4.tour-info.rating{
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  
+}
+i.tour-info-icon{
+  text-align: center;
+  font-size: 25px;
+}
+div.tour-info-icon{
+  text-align: center;
+   font-family: "Montserrat", Sans-Serif;
+}
+.tour-info-icons >div:first-child{
+  margin-left: -4%;
+}
+.highlight-title{
+  font-size: 28px;
+  color: #484848;
+}
+.icons i{
+  font-size: 20px;
+}
+.datepicker-title {
+  color: #484848;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #484848;
+  padding: 10px;
 }
