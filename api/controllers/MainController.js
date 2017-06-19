@@ -28,7 +28,80 @@ module.exports = {
   			if (error) throw new Error(error);
   				res.json(body);
 		});
-	}
+	},
+
+  cities : function (req, res) {
+    var data = {
+  "results": {
+    "category1": {
+      "name": "Panama",
+      "results": [
+      {
+          "title": "Panama City",
+          "url": "/optional/url/on/click",
+        },
+        {
+          "title": "Bocas del Toro",
+          "url": "/optional/url/on/click",
+        },
+        {
+          "title": "El valle de Anton",
+          "url": "/optional/url/on/click",
+        },
+        {
+          "title": "San Blas",
+          "url": "/optional/url/on/click",
+        },
+        {
+          "title": "Chiriqui",
+          "url": "/optional/url/on/click",
+        }
+      ]
+    },
+    "category2": {
+      "name": "Colombia",
+      "results": [
+        {
+          "title": "Medellin",
+          "url": "/optional/url/on/click",
+        },
+         {
+          "title": "Bogotá",
+          "url": "/optional/url/on/click",
+        },
+         {
+          "title": "Cartagena",
+          "url": "/optional/url/on/click",
+        }
+      ]
+    },
+    "category3": {
+      "name": "Mexico",
+      "results": [
+        {
+          "title": "Cancún",
+          "url": "/optional/url/on/click",
+        },
+         {
+          "title": "Ciudad de Mexico",
+          "url": "/optional/url/on/click",
+        },
+         {
+          "title": "Puero Vallarta",
+          "url": "/optional/url/on/click",
+        }
+      ]
+    }
+  },
+  // optional action below results
+  "action": {
+    "url": '/path/to/results',
+    "text": "View all 202 results"
+  }
+}
+
+  res.json(data);
+  }
 	
 };
 

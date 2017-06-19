@@ -1,0 +1,140 @@
+<div class="container">
+	<form class="ui equal width form" action="/tour">
+    <div class="fields">
+      <div class="field">
+        <label>Tipo de Tour</label>
+          <select name="type" class="ui dropdown" id="select">
+      			<option value="">Escoge un tipo de tour</option>
+      			<option value="all">Todos</option>
+      			<option value="day">Tours Diarios</option>
+      			<option value="multi">Tours Multi-día</option>
+      			<option value="transfer">Transporte</option>
+          </select>
+      </div>
+       <div class="field">
+        <label>Categoría</label>
+            <select name="category" disabled class="ui dropdown" id="select">
+        			<option value="">Escoge una categoría</option>
+        			<option value="all">Todos</option>
+        			<option value="male">Tours Diarios</option>
+        			<option value="female">Tours Multi-día</option>
+        			<option value="female">Transporte</option>
+            </select>
+       </div>
+      	<div class="field">
+      		<label>Duración</label>
+      		<select name="category" disabled class="ui dropdown" id="select">
+        			<option value="">Escoge una categoría</option>
+        			<option value="all">Todos</option>
+        			<option value="male">Medio dia</option>
+        			<option value="female">Dia entero</option>
+        			<option value="female">2 Dias</option>
+        			<option value="female">+3 Dias</option>
+      		</select>
+      	</div>
+        <div class="field">
+          <button class="ui submit primary button" style="width: 100%;margin-top: 23px;"> Búsqueda</button>
+        </div>
+    </div>
+  </form><!-- -->
+  <h4 class="ui header">
+  <i class="trophy icon"></i>
+  <div class="content">
+    Ordenar Resultados Por:
+    <div class="ui inline dropdown">
+      <div class="text">Relevancia</div>
+      <i class="dropdown icon"></i>
+      <div class="menu">
+      <div class="header item">Fecha de Publicación</div>
+        <div class="header item active">Relevancia</div>
+        <div class="header item">Precio Más Bajo</div>
+        <div class="header item">Precio Más Alto</div>
+        
+      </div>
+    </div>
+  </div>
+</h4>
+</div> <!-- end container -->
+
+
+<div class="container">
+  <div class="ui menu">
+  <a class="browse item">
+    Browse
+    <i class="dropdown icon"></i>
+  </a>
+  <div class="ui fluid popup bottom left transition hidden">
+    <div class="ui four column relaxed divided grid">
+      <div class="column">
+        <h4 class="ui header">Fabrics</h4>
+        <div class="ui link list">
+          <a class="item">Cashmere</a>
+          <a class="item">Linen</a>
+          <a class="item">Cotton</a>
+          <a class="item">Viscose</a>
+        </div>
+      </div>
+      <div class="column">
+        <h4 class="ui header">Size</h4>
+        <div class="ui link list">
+          <a class="item">Small</a>
+          <a class="item">Medium</a>
+          <a class="item">Large</a>
+          <a class="item">Plus Sizes</a>
+        </div>
+      </div>
+      <div class="column">
+        <h4 class="ui header">Colors</h4>
+        <div class="ui link list">
+          <a class="item">Neutrals</a>
+          <a class="item">Brights</a>
+          <a class="item">Pastels</a>
+        </div>
+      </div>
+      <div class="column">
+        <h4 class="ui header">Types</h4>
+        <div class="ui link list">
+          <a class="item">Knitwear</a>
+          <a class="item">Outerwear</a>
+          <a class="item">Pants</a>
+          <a class="item">Shoes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+  $ ( document).ready( function(){
+    $('select.dropdown').dropdown();
+    $('#select').dropdown();
+    $('.ui.dropdown').dropdown();
+
+
+    $('.menu .browse')
+  .popup({
+    inline     : true,
+    hoverable  : true,
+     position   : 'bottom left',
+    delay: {
+      show: 200,
+      hide: 300
+    }
+  });
+
+
+// $('.ui.search').search({
+//     apiSettings: {
+//       url: 'http://localdomain.com:1337/main/cities'
+//     },
+//     type: 'category'
+//     });
+   });
+
+
+</script>
+
+
+

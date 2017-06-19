@@ -1,0 +1,129 @@
+ <div class="container-fluid">
+<nav class="navbar navbar-inverse" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Triptable</a>
+
+            </div>
+            <div class="hidden-sm hidden-xs">
+                <ul class="nav navbar-nav pull-left">
+                        <li>
+                        <a class="ui category search item nav-link pull-left">
+                            <div class="ui transparent icon input">
+                              <input class="prompt" type="text" id="searchBox" placeholder="Busca tours, destinos y más...">
+                              <i class="search link icon"></i>
+                            </div>
+                            
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse js-navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav pull-right">         
+                      <ul class="nav navbar-nav">
+                      <li class="dropdown mega-dropdown">
+                          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Destinos <span class="caret"></span></a>
+                          <ul class="dropdown-menu mega-dropdown-menu">
+                            <li class="col-md-3 col-lg-2 col-sm-3">
+                              <ul>
+                                <li class="dropdown-header">México</li>
+                                <li><a href="#">Tours en Ciudad de México</a></li>
+                                <li><a href="#">Tours en Cancún</a></li>
+                                <li><a href="#">Tours en Riviera Maya</a></li>                       
+                              </ul>
+                            </li>
+                            <li class="col-md-3 col-lg-2 col-sm-3">
+                              <ul>
+                                <li class="dropdown-header">Panamá</li>
+                                <li><a href="#">Tours en Ciudad de Panamá</a></li>
+                                <li><a href="#">Tours en Guna Yala (San Blas)</a></li>
+                                <li><a href="#">Tours en Bocas del Toro</a></li>
+                                <li><a href="#">Tours en Chiriquí</a></li>
+                                <!--<li class="divider"></li>
+                                <li class="dropdown-header">Perú</li>
+                                <li><a href="#">Tours en Lima</a></li>
+                                <li><a href="#">Tours en Cusco</a></li>
+                                <li><a href="#">Tours en Arequipa</a></li> -->
+                              </ul>
+                            </li>
+                            <li class="col-md-3 col-lg-2 col-sm-3">
+                              <ul>
+                                <li class="dropdown-header">Colombia</li>
+                                <li><a href="#">Tours en Medellín</a></li>
+                                <li><a href="#">Tours en Bogotá</a></li>
+                                <li><a href="#">Tours en Cartagena</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                      </ul>
+                    </li>
+                    </li>
+                      
+                    <li>
+                        <a class="nav-link" href="#">Cómo Funciona</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Log In</a>
+                    </li>
+                   
+                    
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <!-- The Profile picture inserted via div class below, with shaping provided by Bootstrap -->
+                                <div class="profile-img img-circle"></div>
+                            Mi Perfil <span class="caret"></span>
+                            </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="nav-link" href="#">Reservas</a>
+                        </li>
+                        <li>
+                            <a href="#">Ajustes</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Mensajes</a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="#">Salir</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        <!-- /.container -->
+    </nav>
+</div>
+  <script type="text/javascript">
+jQuery(document).on('click', '.mega-dropdown', function(e) {
+  e.stopPropagation()
+})
+$(document).ready(function(){
+    $('#searchBox').focus(function()
+{
+    /*to make this flexible, I'm storing the current width in an attribute*/
+    $(this).attr('data-default', $(this).width());
+    $(this).animate({ width: 350 }, 'slow');
+}).blur(function()
+{
+    /* lookup the original width */
+    var w = $(this).attr('data-default');
+    $(this).animate({ width: w }, 'slow');
+});
+});
+  </script>

@@ -35,7 +35,8 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
-  '/tour': { view: 'Pages/tour'}
+  '/tour': { view: 'Pages/tour'},
+  '/search': { view: 'Pages/search'},
 
   /***************************************************************************
   *                                                                          *
