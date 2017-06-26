@@ -1,0 +1,40 @@
+ <li>
+    <a class="nav-link">
+      <div class="content">
+        <div class="ui inline dropdown" id="country-selector" >
+          <div class="text" id="coutries-dropdown"><i class="fa fa-globe"style="font-size: 18px;vertical-align: middle;"></i> Explora por Destinos</div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="header item"><span id="colombia"><i class="co flag"></i>Colombia</span></div>
+            <div class="header item"> <span id="panama"><i class="pa flag"></i>Panama</span></div>
+            <div class="header item"><span id="mexico"><i class="mx flag"></i> México</span></div>
+            <div class="header item"><span id="republica-dominicana"><i class="do flag"></i>R. Dominicana</span></div>
+          </div>
+        </div>
+       
+        </div>
+    </a>
+</li>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var pais = window.location.search.substr(1);
+    if (pais) {
+      var elem = $('#'+pais)[0].outerHTML;
+      $("#country-selector").dropdown('set selected', elem);
+    } else {
+      $("#country-selector").dropdown();
+    }
+
+    var country = $("#country-selector").dropdown({
+      action: function(text, value){
+      var selected = $(value).attr('id');
+      window.location.href = "/country?"+selected;
+    }
+  });
+
+      
+
+  });
+</script>

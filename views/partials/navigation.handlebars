@@ -72,6 +72,7 @@
                       </ul>
 </li>
                     </li>-->
+                    {{>navbar/country-selector}}
                     <li>
                         <a class="nav-link" href="#">Cómo Funciona</a>
                     </li>
@@ -82,8 +83,8 @@
                         <a class="nav-link" href="#">Log In</a>
                     </li>
                    
-                    
-                    <ul class="nav navbar-nav pull-right">
+                    <li>
+                    <ul class="nav navbar-nav">
                         <li class="dropdown">
                             <a class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 <!-- The Profile picture inserted via div class below, with shaping provided by Bootstrap -->
@@ -107,6 +108,7 @@
                     </ul>
                 </li>
             </ul>
+            </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -115,7 +117,7 @@
     </nav>
 </div>
   <script type="text/javascript">
-jQuery(document).on('click', '.mega-dropdown', function(e) {
-  e.stopPropagation()
-})
+    jQuery(document).on('click', '.mega-dropdown', function(e) {
+      e.stopPropagation()
+    });
   </script>

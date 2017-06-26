@@ -57,80 +57,11 @@
 </div> <!-- end container -->
 
 
-<div class="container">
-  <div class="ui menu">
-  <a class="browse item">
-    Browse
-    <i class="dropdown icon"></i>
-  </a>
-  <div class="ui fluid popup bottom left transition hidden">
-    <div class="ui four column relaxed divided grid">
-      <div class="column">
-        <h4 class="ui header">Fabrics</h4>
-        <div class="ui link list">
-          <a class="item">Cashmere</a>
-          <a class="item">Linen</a>
-          <a class="item">Cotton</a>
-          <a class="item">Viscose</a>
-        </div>
-      </div>
-      <div class="column">
-        <h4 class="ui header">Size</h4>
-        <div class="ui link list">
-          <a class="item">Small</a>
-          <a class="item">Medium</a>
-          <a class="item">Large</a>
-          <a class="item">Plus Sizes</a>
-        </div>
-      </div>
-      <div class="column">
-        <h4 class="ui header">Colors</h4>
-        <div class="ui link list">
-          <a class="item">Neutrals</a>
-          <a class="item">Brights</a>
-          <a class="item">Pastels</a>
-        </div>
-      </div>
-      <div class="column">
-        <h4 class="ui header">Types</h4>
-        <div class="ui link list">
-          <a class="item">Knitwear</a>
-          <a class="item">Outerwear</a>
-          <a class="item">Pants</a>
-          <a class="item">Shoes</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-</div>
-
 <script type="text/javascript">
   $ ( document).ready( function(){
     $('select.dropdown').dropdown();
     $('#select').dropdown();
-    $('.ui.dropdown').dropdown();
 
-
-    $('.menu .browse')
-  .popup({
-    inline     : true,
-    hoverable  : true,
-     position   : 'bottom left',
-    delay: {
-      show: 200,
-      hide: 300
-    }
-  });
-
-
-// $('.ui.search').search({
-//     apiSettings: {
-//       url: 'http://localdomain.com:1337/main/cities'
-//     },
-//     type: 'category'
-//     });
    });
 
 

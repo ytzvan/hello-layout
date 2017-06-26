@@ -26,10 +26,9 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse js-navbar-collapse" id="bs-example-navbar-collapse-1">
-
                 <ul class="nav navbar-nav pull-right">         
                       <ul class="nav navbar-nav">
-                      <li class="dropdown mega-dropdown">
+                      <!--<li class="dropdown mega-dropdown">
                           <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Destinos <span class="caret"></span></a>
                           <ul class="dropdown-menu mega-dropdown-menu">
                             <li class="col-md-3 col-lg-2 col-sm-3">
@@ -47,11 +46,11 @@
                                 <li><a href="#">Tours en Guna Yala (San Blas)</a></li>
                                 <li><a href="#">Tours en Bocas del Toro</a></li>
                                 <li><a href="#">Tours en Chiriquí</a></li>
-                                <!--<li class="divider"></li>
+              
                                 <li class="dropdown-header">Perú</li>
                                 <li><a href="#">Tours en Lima</a></li>
                                 <li><a href="#">Tours en Cusco</a></li>
-                                <li><a href="#">Tours en Arequipa</a></li> -->
+                                <li><a href="#">Tours en Arequipa</a></li> 
                               </ul>
                             </li>
                             <li class="col-md-3 col-lg-2 col-sm-3">
@@ -65,8 +64,8 @@
                           </ul>
                       </ul>
                     </li>
-                    </li>
-                      
+                    </li> -->
+                    {{>navbar/country-selector}}
                     <li>
                         <a class="nav-link" href="#">Cómo Funciona</a>
                     </li>
@@ -110,6 +109,7 @@
     </nav>
 </div>
   <script type="text/javascript">
+
 jQuery(document).on('click', '.mega-dropdown', function(e) {
   e.stopPropagation()
 })

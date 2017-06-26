@@ -26,9 +26,9 @@ footer p {
   color: white;
 }
 .business-header {
-    height: 600px;
+    height: 500px;
     background: linear-gradient( rgba(20,20,20, .5), rgba(20,20,20, .5));
-   /* background: url(http://placehold.it/1920x400) center center no-repeat scroll; */
+    /* background: url('https://res.cloudinary.com/triptable/image/upload/c_fill,q_auto,f_auto,g_auto/dpr_auto,w_auto/c_limit,w_1440/nhrd0yprpm6oalrzdcgs.jpg') center center no-repeat scroll; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -36,7 +36,7 @@ footer p {
 }
  
 .hero-search {
-	padding-top: 12%;
+	padding-top: 9%;
     border-color: white !important;
 }
 .page-title{
@@ -50,7 +50,7 @@ footer p {
     padding-bottom: 15px; 
 }
 .entry-subtitle p {
-   color: #ababab;
+   color: #484848;
 }
 .center {
 	text-align: center;
@@ -75,22 +75,25 @@ section h1{
     text-align: center;
 }
 section .lead{
-    color: #919191;
+    color: #484848;
     font-weight: 400;
     font-size: 18px;
 }
-#tours{
-    background-color: whitesmoke;
-}
+
 @media (min-width: 768px)
 .lead {
     font-size: 21px;
 }
 
-
+.destination-container{
+ height: 150px !important;
+  width: auto;
+  border-radius: 15% !important;
+  
+}
 .img_container {
     text-align: center;
-    height:250px;
+    height:200px;
     border-radius: 5%;
 }
 
@@ -128,7 +131,7 @@ section .lead{
 }
 .caption
     p{
-        color: #919191;
+        color: #484848;
     }
 .caption
     .price {
@@ -148,7 +151,7 @@ section .lead{
 .caption 
     .place{
         padding: 0px 10px;
-        color: #919191;
+        color: #484848;
         font-size: 14px;
         margin-bottom: 0px;
     }            
@@ -184,11 +187,12 @@ section
 .callout {
     display: table;
     width: 100%;
-    height: 500px;
+    height: 375px;
     color: #fff;
-   background: -webkit-linear-gradient(rgba(20,20,20, .5), rgba(20,20,20, .5)),url('https://res.cloudinary.com/triptable/image/upload/c_fill,h_577,w_952/v1481794130/hmw698crnhe-clem-onojeghuo_ehnjlj.jpg');
-   background: -o-linear-gradient(rgba(20,20,20, .5), rgba(20,20,20, .5)),url('https://res.cloudinary.com/triptable/image/upload/c_fill,h_577,w_952/v1481794130/hmw698crnhe-clem-onojeghuo_ehnjlj.jpg');
-   background: linear-gradient(rgba(20,20,20, .7), rgba(20,20,20, .7)),url('https://res.cloudinary.com/triptable/image/upload/c_fill,h_577,w_952/v1481794130/hmw698crnhe-clem-onojeghuo_ehnjlj.jpg'); background-position: 50%; background-size: cover;
+   background: -webkit-linear-gradient(rgba(20,20,20, .5), rgba(20,20,20, .5)),url('https://scontent-gru2-2.xx.fbcdn.net/v/t31.0-8/18922848_821861217977414_2524089024153140341_o.jpg?oh=1b3bd29ce5da12f2446905ee2c513aa3&oe=59CD18AF');
+   background: -o-linear-gradient(rgba(20,20,20, .5), rgba(20,20,20, .5)),url('https://scontent-gru2-2.xx.fbcdn.net/v/t31.0-8/18922848_821861217977414_2524089024153140341_o.jpg?oh=1b3bd29ce5da12f2446905ee2c513aa3&oe=59CD18AF');
+   background: linear-gradient(rgba(20,20,20, .7), rgba(20,20,20, .7)),url('https://scontent-gru2-2.xx.fbcdn.net/v/t31.0-8/18922848_821861217977414_2524089024153140341_o.jpg?oh=1b3bd29ce5da12f2446905ee2c513aa3&oe=59CD18AF'); 
+   background-position: 50% 35%; background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -211,8 +215,7 @@ section
 }
 .feature {
     display: table;
-    height: 400px;
-    border: 2px black;
+    
 }
 .card
     .title {
@@ -221,7 +224,7 @@ section
     }
     .subtitle {
         font-weight: 300;
-        color: #ababab;
+        color: #484848;
     }
 .footer {
     background-color: #1B222C;
@@ -234,7 +237,7 @@ section
     margin-bottom: 0;
 }    
 #nav-link{
-    color: #919191;
+    color: #484848;
     font-size: 15px;
     font-weight: 400;
 
@@ -329,6 +332,10 @@ section
 }
 h2.name{
   font-size: 25px;
+  font-weight: 800;
+}
+h2.destination-name{
+  font-size: 18px;
   font-weight: 800;
 }
 .destination {
@@ -448,14 +455,17 @@ span.rate{
   color: #3498db !important;
   padding: 15px;
 }
-.tour-title{
+h1.tour-title{
   margin: 0;
   text-align: left;
+  font-weight: 800;
 }
-p.tour-info-description {
-  color: #484848;
+p.tour-subtitle {
+  color: black;
+  font-weight: 400;
   text-align: justify;
-  font-size: 16px;
+  font-size: 15px;
+  margin-bottom: 0px;
 }
 h4.tour-info{
 }
@@ -467,15 +477,20 @@ h4.tour-info.rating{
 }
 i.tour-info-icon{
   text-align: center;
-  font-size: 25px;
+  font-size: 14px;
 }
 div.tour-info-icon{
   text-align: center;
    
 }
-.tour-info-icons >div:first-child{
-  margin-left: -4%;
+
+.col-xs-12 .highlights {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
+
 .highlight-title{
   font-size: 24px;
   color: #484848;
@@ -494,7 +509,7 @@ h2.price{
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.1em;
 }
 span.money{
   font-weight: 400;
@@ -541,7 +556,7 @@ h4 i.fa{
 .questions-info{
 }
 .book-now-btn{
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .question-phone{
@@ -569,8 +584,8 @@ h4 i.fa{
    padding: 15px;
 }
 .img-gallery {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   color: #fff;
   margin: 1px;
 }
@@ -619,6 +634,14 @@ h4 i.fa{
 }
 .search-header{
     padding: 75px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: rgba(255,255,255,.9);
+}
+.country-header{
+    padding: 120px 0;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -675,6 +698,22 @@ h4 i.fa{
     padding: 31px;
     font-family: inherit;
 }
+#searchBox::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #949494;
+  font-size: 17px;
+}
+#searchBox::-moz-placeholder { /* Firefox 19+ */
+  color: #949494;
+  font-size: 17px;
+}
+#searchBox:-ms-input-placeholder { /* IE 10+ */
+  color: #949494;
+  font-size: 17px;
+}
+#searchBox:-moz-placeholder { /* Firefox 18- */
+  color: #949494;
+  font-size: 17px;
+}
 /*end algolia */
 .ui.icon.input>i.icon{
   opacity: 1;
@@ -690,4 +729,52 @@ h4 i.fa{
    border-top-left-radius: 0; 
    border-top-right-radius: 0; 
    border-radius: 0%;
+}
+.text span{
+  text-transform: uppercase;
+}
+.card h2.title{
+  font-weight: 400;
+  font-family: "Raleway", Sans-Serif;
+}
+.no-padding{
+  padding: 0 !important;
+}
+.no-margin{
+  margin:0 !important;
+}
+section.inverse{
+      background-color: whitesmoke;
+}
+.breadcrumb{
+  background-color: transparent;
+padding: 0;
+}
+.breadcrumb > .active {
+    color:#2980b9;
+}
+
+.margin-5 {
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
+ }
+.ui.divider{
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.not-included{
+  text-decoration: line-through;
+}
+.btn-success:focus, .btn-success.focus {
+    color: #ffffff;
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+.btn-success:active:hover{
+  color: #ffffff;
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+span.tour-description-icon{
+  font-size: 16px;
 }
